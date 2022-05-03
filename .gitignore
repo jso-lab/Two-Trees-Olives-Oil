@@ -4,4 +4,7 @@ node_modules
 npm-debug.log
 
 #Ignorer le fichier SQL
-.dump.sql
+.dump
+
+#Ignorer le dossier data 
+data
