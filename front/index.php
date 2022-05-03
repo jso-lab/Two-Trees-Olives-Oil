@@ -1,10 +1,15 @@
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">Neque porro quisquam.</h1>
-        <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis tellus non est semper fringilla.</p>
+<section class="jumbotron py-5 text-center">
+    <div class="container py-5">
+        <h1 class="jumbotron-heading">Porro quisquam.</h1>
+        <p class="lead text-muted">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        </p>
         <p>
-            <a href="#" class="btn btn-primary my-2">Praesent tempor nec eros ac congue. </a>
-            <a href="#" class="btn btn-secondary my-2">Donec vehicula risus in convallis cursus.</a>
+            <a href="#" class="btn btn-lg btn-primary mx-3 my-4">Les promotions</a>
+            <a href="#" class="btn btn-lg btn-secondary my-4">Le magasin</a>
         </p>
     </div>
 </section>

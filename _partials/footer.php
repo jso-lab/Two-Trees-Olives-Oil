@@ -2,11 +2,20 @@
         </main>
 
         <footer class="text-muted">
-            <div class="container">
-                <p class="float-right">
-                    <a href="#">Revenir</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis tellus non est semper fringilla. </p>
+            <div class="row bg-info d-flex justify-content-between" >
+                 <div class="col-sm-4 offset-md-1 py-4 mx-5">
+                    <ul class="list-unstyled">
+                        <li><a href="/index.php" class="text-white">Accueil</a></li>
+                        <li><a href="/front/cgu.php" class="text-white">Conditions d'utilisation</a></li>
+                        <li><a href="/front/about.php" class="text-white">A propos</a></li>
+                        <li><a href="https://www.jardiner-malin.fr/fiche/olivier.html" class="text-white">Découvrir l'olivier</a></li>
+                    </ul>
+                    <p class="text-white">Copyright &copy; 2022 - Two Trees Olive Oils</p>
+                </div>
+                <div class="col-sm-2 col-lg-2 offset-md-1 py-4">
+                    <img src="/assets/img/logo/first_logo.png" alt="" 
+                    width="150" height="150"class="img-fluid mx-3">
+                </div>
             </div>
         </footer>
 

@@ -6,6 +6,7 @@
                 <h1>Produits</h1>
                 <a class="btn btn-primary text-white" href="/index.php/admin/products/add">Ajouter</a>
                 <table class="table">
+                    <caption></caption>
                     <thead>
                     <tr>
                         <th scope="col">#</th>
