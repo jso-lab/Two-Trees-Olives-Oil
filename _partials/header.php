@@ -15,7 +15,7 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./assets/css/custom.css" rel="stylesheet">
+    <link href="./assets/styles/app.scss" rel="stylesheet">
 
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
