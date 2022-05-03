@@ -1,0 +1,39 @@
+{
+	"name": "two_trees_olives_oil",
+	"version": "1.0.0",
+	"description": "Site e-commerce en PHP 8",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hawa029/Two-Trees-Olives-Oil.git"
+	},
+	"keywords": [
+		"PHP",
+		"Apache",
+		"Html",
+		"CSS",
+		"Sass",
+		"Js"
+	],
+	"author": "Jean Paul SOSSAH",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hawa029/Two-Trees-Olives-Oil/issues"
+	},
+	"homepage": "https://github.com/hawa029/Two-Trees-Olives-Oil#readme",
+	"dependencies": {
+		"sass": "^1.51.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.10",
+		"@babel/preset-env": "^7.17.10",
+		"babel-loader": "^8.2.5",
+		"css-loader": "^6.7.1",
+		"sass-loader": "^12.6.0",
+		"webpack": "^5.72.0",
+		"webpack-dev-server": "^4.8.1"
+	}
+}
