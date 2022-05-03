@@ -12,17 +12,19 @@ Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à
 
 ## Installation
 
-    Pour visualiser ce projet il faut avoir sur sa machine :
+    Pour visualiser ce projet en local :
 
     - VS Code
     - MAMP/WAMP ou XAMP
 
-    Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree.
+    Clonez ce dossier Repository sur votre machine ou sur
+    un outil GUI tel que SourceTree.
 
-    - Vous devez ensuite modifier les paramètres de base de données dans le fichier config.php
+    - Vous devez ensuite modifier les paramètres de base de données
+    dans le fichier config.php
 
 ### Conception et adaptation
 
 **Jean Paul SOSSAH**
 
-Me contacter [Jean Paul SOSSAH](https://www.linkedin.com/in/jean-paul-s-9a232419b/) sur LinkedIn.
+[Me contacter](https://www.linkedin.com/in/jean-paul-s-9a232419b/) sur LinkedIn.
