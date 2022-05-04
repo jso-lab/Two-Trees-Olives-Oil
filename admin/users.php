@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Utilisateurs</h1>
-                <a href="index.php/admin/user/add" class="btn btn-primary text-white">Ajouter</a>
-                <a href="index.php/admin/user/import" class="btn btn-primary text-white">Import</a>
+                
                 <table class="table">
+                    <caption>Liste des clients</caption>
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">N°</th>
                         <th scope="col">Email</th>
                         <th scope="col">Supprimer</th>
                     </tr>
@@ -26,6 +26,10 @@
                     <?php } ?>
                     </tbody>
                 </table>
+            </div>
+            <div class="col-sm">
+                <a href="index.php/admin/user/add" class="btn btn-primary text-white">Ajouter</a>
+                <a href="index.php/admin/user/import" class="btn btn-primary text-white">Importer</a>
             </div>
         </div>
     </div>

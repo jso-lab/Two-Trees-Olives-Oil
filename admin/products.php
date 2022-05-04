@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Produits</h1>
-                <a class="btn btn-primary text-white" href="/index.php/admin/products/add">Ajouter</a>
+               
                 <table class="table">
-                    <caption></caption>
+                    <caption>Liste des produits</caption>
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">N°</th>
                         <th scope="col">Désignation</th>
                         <th scope="col">Supprimer</th>
                     </tr>
@@ -26,6 +26,9 @@
                     <?php } ?>
                     </tbody>
                 </table>
+            </div>
+            <div class="col-sm">
+                <a class="btn btn-primary text-white" href="/index.php/admin/products/add">Ajouter un produit</a>
             </div>
         </div>
     </div>

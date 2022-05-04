@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Catégories</h1>
-                <a class="btn btn-primary text-white" href="/index.php/admin/category/add">Ajouter</a>
-                <a class="btn btn-primary text-white" href="/index.php/admin/categories/import">Import</a>
+              
                 <table class="table">
+                    <caption>Liste des categories</caption>
                     <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -26,6 +26,10 @@
                     <?php } ?>
                     </tbody>
                 </table>
+            </div>
+            <div class="col-sm">
+                <a class="btn btn-primary text-white" href="/index.php/admin/category/add">Ajouter</a>
+                <a class="btn btn-primary text-white" href="/index.php/admin/categories/import">Importer</a>
             </div>
         </div>
     </div>

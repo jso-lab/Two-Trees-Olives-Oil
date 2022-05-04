@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Panier</h1>
-                <a id="paypal-button"></a>
+              
                 <table class="table">
-                    <caption></caption>
+                    <caption>Aperçu du panier</caption>
                     <thead>
                     <tr>
-                        <th scope="col">Qté</th>
+                        <th scope="col">Quantité</th>
                         <th scope="col">Désignation</th>
                         <th scope="col">Supprimer</th>
                     </tr>
@@ -28,6 +28,9 @@
                         <?php } ?>
                     </tbody>
                 </table>
+            </div>
+            <div class="col-sm">
+                <a id="paypal-button"></a>
             </div>
         </div>
     </div>

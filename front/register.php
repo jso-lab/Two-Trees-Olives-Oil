@@ -6,14 +6,17 @@
             <div class="col-lg-12">
                 <form method="post" action="">
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">E-mail</label>
                         <input type="email" class="form-control" name="email" placeholder="Entrer une adresse mail" required >
                     </div>
                     <div class="form-group">
                         <label for="password">Mot de passe</label>
                         <input type="password" class="form-control" name="password" placeholder="Choisissez un mot de passe" required >
                     </div>
-                    <button type="submit" class="btn btn-primary">Valider</button>
+                    <div class="col-sm py-4">
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </div>
+                   
                 </form>
             </div>
         </div>
