@@ -1,7 +1,7 @@
 <div class="album py-5 bg-light">
     <div class="container">
 
-        <div class="row">
+        <div class="row py-5">
             <h1>Connexion</h1>
             <div class="col-lg-12">
                 <form method="POST" name="login" action="">

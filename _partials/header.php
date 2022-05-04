@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Two Trees Olives Oil, vente d'huile de qualité d'olive en ligne ">
     <meta name="author" content="Jean Pau SOSSAH">
-    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="icon" href="./assets/img/logo/fav.png">
 
     <title>Two Trees Olive Oils - vente d'huile d'olive de qualité en ligne</title>
 

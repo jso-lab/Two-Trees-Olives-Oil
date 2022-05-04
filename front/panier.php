@@ -2,8 +2,8 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12">
-                <h1>Panier</h1>
+            <div class="col-lg-12 py-5">
+                <h1 class="pb-2">Panier</h1>
               
                 <table class="table">
                     <caption>Aperçu du panier</caption>
