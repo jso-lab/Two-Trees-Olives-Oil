@@ -3,6 +3,7 @@
 
         <div class="row">
             <h1>Connexion impossible</h1>
+                <h2>Vous n'avez peut-être pas des droits d'accéder à cette ressource...</h2>
         </div>
     </div>
 </div>

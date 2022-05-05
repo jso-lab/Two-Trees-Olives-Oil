@@ -11971,8 +11971,7 @@ a {
   font-family: 'Signika Negative', sans-serif;
 }
 
-footer > a {
-  list-style: none;
+.links > a {
   text-decoration: none;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,4 +1,8 @@
 <?php
+
+const HOME_ADMIN = 'Location: /index.php/admin';
+const HOME_USER = 'Location: /index.php';
+
 function index()
 {
     $products = get_products();
@@ -28,7 +32,7 @@ function register()
         $data = $_POST;
         $data['admin'] = 0;
         set_user($data);
-        header('Location: /index.php');      
+        header(HOME_USER);      
         exit();  
     } else {
         require_once 'front/register.php';
@@ -41,7 +45,7 @@ function panier()
 }
 
 function admin_index()
-{
+{   
     require_once 'admin/index.php';
 }
 

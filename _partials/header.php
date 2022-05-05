@@ -24,26 +24,25 @@
 <body>
 
 <header>
-    <div class="collapse bg-info" id="navbarHeader">
+    <div class="collapse bg-info text-white" id="navbarHeader">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 offset-md-1 py-4">
+                <div class=" col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Menu</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="index.php/panier" class="text-white">Panier</a></li>
-                        <li><a href="index.php/register" class="text-white">Créer un compte</a></li>
-                        <li><a href="index.php/login" class="text-white">Connexion</a></li>
-                        <li><a href="index.php/logout" class="text-white">Déconnexion</a></li>
-                        <li><a href="index.php/admin/index" class="text-white">Admin</a></li>
-                    </ul>
+                     <div class="list-unstyled">
+                       <?php if( session_start() && $_SESSION["logged"] = true) {  
+                          '<p class="nav-link"><a href="index.php/logout" style="text-decoration: none;" class="text-white">Déconnexion</a></p>';
+                         } ?>
+                        <p class="nav-link"><a href="index.php/login" style="text-decoration: none;" class="text-white">Admin</a></p>
+                    </div>
                 </div>
                  <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Catégories</h4>
-                <ul class="list-unstyled">
+                <div class="list-unstyled">
                     <?php foreach ($header_categories as $hc) { ?>
-                        <li><a href="index.php/products?id=<?= $hc['id']; ?>" class="text-white"><?= $hc['name']; ?></a></li>
+                        <p class="nav-link"><a style="text-decoration: none;" href="index.php/products?id=<?= $hc['id']; ?>" class="text-white"><?= $hc['name']; ?></a></p>
                     <?php } ?>
-                </ul>
+                </div>
         </div>
             </div>
         </div>
@@ -54,6 +53,13 @@
                 <img src="/assets/img/logo/fav.png" alt="logo" width="40" height="40">
                 <h1 class="pt-2">Two Trees Olive Oils</h1>
             </a>
+            <div class="list-unstyled d-flex">
+                <p class="nav-link"><a style="text-decoration: none;" href="index.php/panier" class="text-white">Panier</a></p>
+                <p class="nav-link"><a style="text-decoration: none;" href="index.php/register" class="text-white">Créer un compte</a></p>
+                   <?php if( session_start() && $_SESSION["logged"] = false) {  
+                        '<p class="nav-link"><a href="index.php/login" style="text-decoration: none;" class="text-white">Connexion</a></p>';
+                    } ?>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

@@ -29,12 +29,12 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Espace de gestion</h4>
                     <?php if (isset($_SESSION['logged'])) { echo "<p>" . $_SESSION['email'] . "</p>"; } ?>
-                    <ul class="list-unstyled">
-                        <li><a href="index.php/admin/products" class="text-white">Produits</a></li>
-                        <li><a href="index.php/admin/users" class="text-white">Utilisateurs</a></li>
-                        <li><a href="index.php/admin/admins" class="text-white">Administrateurs</a></li>
-                        <li><a href="index.php/admin/categories" class="text-white">Catégories</a></li>
-                    </ul>
+                    <div class="list-unstyled">
+                        <p class="nav-link"><a href="index.php/admin/products" style="text-decoration: none;" class="text-white">Produits</a></p>
+                        <p class="nav-link"><a href="index.php/admin/users" style="text-decoration: none;" class="text-white">Utilisateurs</a></p>
+                        <p class="nav-link"><a href="index.php/admin/admins" style="text-decoration: none;" class="text-white">Administrateurs</a></p>
+                        <p class="nav-link"><a href="index.php/admin/categories" style="text-decoration: none;" class="text-white">Catégories</a></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,6 +45,9 @@
                 <img src="/assets/img/logo/fav.png" alt="logo" width="40" height="40">
                 <h1 class="pt-2">Two Trees Olive Oils</h1>
             </a>
+             <div class=" d-flex">
+                <p class="nav-link"><a style="text-decoration: none;" href="index.php/logout" class="text-white">Déconnexion</a></p>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
