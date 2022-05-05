@@ -3,8 +3,10 @@ node_modules
 .tmp
 npm-debug.log
 
-#Ignorer le fichier SQL
+#Ignorer le fichier SQL, env
 .dump
+.env
 
-#Ignorer le dossier data 
-data
+#Ignorer le dossier data, vendor
+/data
+/vendor/

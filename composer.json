@@ -1,0 +1,16 @@
+{
+    "name": "jpaul/htdocs",
+    "description": "Site de e-commerce avec PHP 8",
+    "autoload": {
+        "psr-4": {
+            "Jpaul\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean Paul",
+            "email": "jpaulcamillo@outlook.fr"
+        }
+    ],
+    "require": {}
+}
