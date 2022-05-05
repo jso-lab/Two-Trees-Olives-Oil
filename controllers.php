@@ -105,13 +105,13 @@ function admin_remove_product($id) {
 }
 function admin_remove_user($id) {
     remove_user($id);
-    header('Location: /index.php/admin');      
+    header(HOME_ADMIN);      
     exit();  
 }
 function admin_user_add() {
     if (!empty($_POST)) {
         set_user($_POST);
-        header('Location: /index.php/admin');      
+        header(HOME_ADMIN);      
         exit();  
     } else {
         require_once 'admin/user_add.php';
@@ -144,7 +144,7 @@ function admin_categories_import() {
             }
             $i++;
         }
-        header('Location: /index.php/admin');     
+        header(HOME_ADMIN);     
         exit();
     }
     require_once 'admin/import.php';
@@ -166,7 +166,7 @@ function admin_user_import() {
             }
             $i++;
         }
-        header('Location: /index.php/admin');     
+        header(HOME_ADMIN);     
         exit();
     }
     require_once 'admin/import.php';
@@ -202,7 +202,7 @@ function pay() {
         // sauvegarde des informations et validation du paiement
         header("Location: /index.php/thanks"); 
     }else{ 
-        header("Location: /index.php"); 
+        header(HOME_USER); 
     } 
 }
 function thanks() {

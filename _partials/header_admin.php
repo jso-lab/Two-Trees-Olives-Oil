@@ -41,7 +41,7 @@
     </div>
     <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-          <a href="index.php" class="navbar-brand d-flex align-items-center">
+          <a href="index.php/admin/index" class="navbar-brand d-flex align-items-center">
                 <img src="/assets/img/logo/fav.png" alt="logo" width="40" height="40">
                 <h1 class="pt-2">Two Trees Olive Oils</h1>
             </a>

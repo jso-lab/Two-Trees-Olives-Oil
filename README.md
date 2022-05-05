@@ -1,14 +1,24 @@
+![Two Tree Olives Oil](assets/img/logo/first_logo.png)
+
 # Site e-commerce en PHP 8
 
-Ce site a été fait à la suite de la formation [Développer un e-commerce en PHP 8][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
+Ce site a été fait à la suite de la formation "Développer un e-commerce en PHP 8". Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
-![Développer un e-commerce en PHP 8][lil-thumbnail-url]
+[Développer un e-commerce en PHP 8][]
 
 Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à l'aide du langage PHP 8. Dans un premier temps, vous installerez les outils indispensables à la création de votre environnement, dont le langage lui-même, ainsi que l'éditeur de code VSC. Puis, vous ferez le tour du projet à créer, des maquettes et de l'architecture de type MVC. Ensuite, vous passerez à la création de la partie administration et, enfin, la partie utilisateur, qui comprend la création de compte, la gestion du panier ainsi que les moyens de paiement.
 
 ## Contenu du site
 
+- Un page d'accueil avec une liste de produits,
+- Un espace de gestion de compte utilisateur,
+- Un espace d'administration,
+- des fonctionnalités de commande...
+
 ## Langages et framework
+
+- PHP 8 (pas de framework pour le backend)
+- HTML5, Bootstrap, et du SASS
 
 ## Installation
 
