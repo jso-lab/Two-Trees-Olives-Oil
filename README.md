@@ -1,12 +1,12 @@
-![Two Tree Olives Oil](assets/img/logo/first_logo.png)
+![logo](assets/img/logo/first_logo.png 'Two Tree Olives Oil')
 
 # Site e-commerce en PHP 8
 
 Ce site a été fait à la suite de la formation "Développer un e-commerce en PHP 8". Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
-[Développer un e-commerce en PHP 8][]
+![Développer un e-commerce en PHP 8](assets/img/li-learning.jpg)
 
-Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à l'aide du langage PHP 8. Dans un premier temps, vous installerez les outils indispensables à la création de votre environnement, dont le langage lui-même, ainsi que l'éditeur de code VSC. Puis, vous ferez le tour du projet à créer, des maquettes et de l'architecture de type MVC. Ensuite, vous passerez à la création de la partie administration et, enfin, la partie utilisateur, qui comprend la création de compte, la gestion du panier ainsi que les moyens de paiement.
+Avec Julian Layen, je me suis lancé dans le développement d'un site de e-commerce à l'aide du langage PHP 8. Dans un premier temps, nous avons installé les outils indispensables à la création de votre environnement, dont le langage lui-même, ainsi que l'éditeur de code VSC. Puis, le tour du projet à créer, des maquettes et de l'architecture de type MVC. Ensuite, nous sommes passés à la création de la partie administration et, enfin, la partie utilisateur, qui comprend la création de compte, la gestion du panier ainsi que les moyens de paiement.
 
 ## Contenu du site
 
@@ -33,7 +33,7 @@ Avec Julian Layen, lancez-vous dans le développement d'un site de e-commerce à
     - Vous devez ensuite modifier les paramètres de base de données
     dans le fichier config.php
 
-### Conception et adaptation
+## Conception et adaptation
 
 **Jean Paul SOSSAH**
 
