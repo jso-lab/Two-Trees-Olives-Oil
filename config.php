@@ -4,7 +4,7 @@
         $host = 'localhost';
         $db_name = 'ecomerce';
         $username = 'root';
-        $password = 'root';
+        $password = '';
         try{
             $connexion = new PDO("mysql:host=" . $host . ";dbname=" . $db_name, $username, $password);
             $connexion->exec("set names utf8");
