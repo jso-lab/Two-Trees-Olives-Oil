@@ -1,10 +1,10 @@
 <?php
     function db() {
         $connexion = null;
-        $host = 'localhost';
-        $db_name = 'ecomerce';
-        $username = 'root';
-        $password = '';
+        $host = 'clwxydcjair55xn0.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+        $db_name = 'ikeqeo8swliybja6';
+        $username = 'a84h6arzwszj1xuo';
+        $password = 'bhtbonpcp0lz0j60';
         try{
             $connexion = new PDO("mysql:host=" . $host . ";dbname=" . $db_name, $username, $password);
             $connexion->exec("set names utf8");
