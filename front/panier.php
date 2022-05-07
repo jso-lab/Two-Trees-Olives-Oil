@@ -41,7 +41,7 @@ paypal.Button.render({
     // Configure environment
     env: 'sandbox',
     client: {
-        sandbox: 'AQ27ES18CkTQPD2eidXwoHdAAfkc9_eoLO8Ab5Xhj6ukSry_2KdRRarnyLePDrQCZPAWpNeSc5R23_KA'
+        sandbox: 'change me'
     },
     // Customize button (optional)
     locale: 'fr_FR',
