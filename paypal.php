@@ -1,6 +1,6 @@
 <?php
-define('PAYPAL_API_CLIENT_ID', 'AQ27ES18CkTQPD2eidXwoHdAAfkc9_eoLO8Ab5Xhj6ukSry_2KdRRarnyLePDrQCZPAWpNeSc5R23_KA');  
-define('PAYPAL_API_SECRET', 'EEp2dh9se-7vKyveqF1b53mxdGOYdIer8izzrtkEQY9v_Ckn2kq3qJW72fEl8-2hTID2l8aQbgIyD7Wk'); 
+define('PAYPAL_API_CLIENT_ID', 'Change me');  
+define('PAYPAL_API_SECRET', 'Change me'); 
 define('PAYPAL_SANDBOX', true);
 
 class PaypalExpress{ 
