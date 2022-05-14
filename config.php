@@ -1,6 +1,6 @@
 <?php
     function db() {
-        /*$connexion = null;*/
+        $connexion = null;
         $host = 'clwxydcjair55xn0.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
         $db_name = 'ikeqeo8swliybja6';
         $username = 'a84h6arzwszj1xuo';

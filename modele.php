@@ -101,7 +101,7 @@
 
         $stmt = $connexion->prepare($query);
         $email = $data['email'];
-        $password = md5($data['password']);
+        $password = password_hash($data['password'], PASSWORD_BCRYPT);
         $admin = (isset($data['admin'])) ? 1 : 0;
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":password", $password);
@@ -123,7 +123,7 @@
         
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!empty($user) && ($user['password'] == md5($data['password']))) {
+        if (!empty($user) && ($user['password'] == password_hash($data['password'], PASSWORD_BCRYPT))) {
             return $user;
         } else {
             return null;
