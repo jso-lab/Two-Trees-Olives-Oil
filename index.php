@@ -23,11 +23,11 @@ if ('/index.php' == $uri)
 }
 elseif ('/index.php/products' == $uri && isset($_GET['id']))
 {
-    echo products($_GET['id']);
+    echo products(htmlspecialchars($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/product' == $uri && isset($_GET['id']))
 {
-    echo product($_GET['id']);
+    echo  product(htmlspecialchars( $_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/login' == $uri)
 {
@@ -95,15 +95,15 @@ elseif ('/index.php/admin/categories/import' == $uri)
 }
 elseif ('/index.php/admin/product/del' == $uri)
 {
-    echo admin_remove_product($_GET['id']);
+    echo htmlspecialchars(admin_remove_product($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/admin/admin/del' == $uri)
 {
-    echo admin_remove_user($_GET['id']);
+    echo htmlspecialchars(admin_remove_user($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/admin/user/del' == $uri)
 {
-    echo admin_remove_user($_GET['id']);
+    echo htmlspecialchars(admin_remove_user($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/admin/user/add' == $uri)
 {
@@ -119,11 +119,11 @@ elseif ('/index.php/admin/users' == $uri)
 }
 elseif ('/index.php/panier/add' == $uri && isset($_GET['id']))
 {
-    echo add_panier($_GET['id']);
+    echo htmlspecialchars(add_panier($_GET['id']), ENT_QUOTES, 'UTF-8'); 
 }
 elseif ('/index.php/panier/del' == $uri && isset($_GET['id']))
 {
-    echo del_panier($_GET['id']);
+    echo htmlspecialchars(del_panier($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 else
 {
