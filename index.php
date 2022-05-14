@@ -87,7 +87,7 @@ elseif ('/index.php/admin/products/add' == $uri)
 }
 elseif ('/index.php/admin/category/del' == $uri)
 {
-    echo admin_category_del($_GET['id']);
+    echo htmlspecialchars(admin_category_del($_GET['id']), ENT_QUOTES, 'UTF-8');
 }
 elseif ('/index.php/admin/categories/import' == $uri)
 {
