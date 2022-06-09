@@ -122,7 +122,7 @@ function try_login() {
     if (!empty($user)) {
         $_SESSION["logged"] = true;
         $_SESSION["id"] = $user['id'];
-        $_SESSION["email"] = $user['email'];  
+        $_SESSION["email"] = $user['email'];
         if ($user['admin'] == 1) {
             header('Location: /index.php/admin');      
         } else {

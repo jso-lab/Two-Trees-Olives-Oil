@@ -101,7 +101,7 @@
 
         $stmt = $connexion->prepare($query);
         $email = $data['email'];
-        $password = password_hash($data['password'], PASSWORD_BCRYPT);
+        $password = password_hash($data['password'], PASSWORD_ARGON2ID);
         $admin = (isset($data['admin'])) ? 1 : 0;
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":password", $password);
@@ -115,6 +115,7 @@
         $stmt = $connexion->prepare($query);
         $stmt->execute();
     }
+    
     function find_user_by_email_and_password($data){
         $connexion = db();
         $query = "SELECT * FROM user WHERE email='" . $data['email'] ."'";
@@ -123,7 +124,7 @@
         
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!empty($user) && ($user['password'] == password_hash($data['password'], PASSWORD_BCRYPT))) {
+        if (!empty($user) && password_verify($user['password'], password_hash($data['password'], PASSWORD_ARGON2ID))) {
             return $user;
         } else {
             return null;
