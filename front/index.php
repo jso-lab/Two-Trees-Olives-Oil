@@ -34,9 +34,9 @@
                 </div>
             </div>
         </div>
-        <i id="nav-gauche" class="las la-chevron-left"></i>
-        <i id="nav-droite" class="las la-chevron-right"></i>
     </div>
+    <i class="las la-chevron-left"id="nav-gauche" ></i>
+    <i class="las la-chevron-right"  id="nav-droite"></i>
 </section>
 <section class="jumbotron py-5 text-center">
     <div class="container py-5">
