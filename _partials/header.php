@@ -68,3 +68,13 @@
 </header>
 
 <main role="main">
+    <div id="progress"
+       style="
+        
+            width: 0;
+	        height: 6px;
+	        background-color: #005949;
+	        top: 0;
+	        position: fixed;
+	        z-index: 9999;">
+    </div>
