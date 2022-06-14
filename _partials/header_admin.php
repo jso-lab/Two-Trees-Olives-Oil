@@ -16,7 +16,8 @@
     <base href="http://localhost/">
 
     <!-- stylesheet CSS -->
-    <link href="./assets/styles/app.css" rel="stylesheet"> 
+    <link href="./assets/styles/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> 
   
 </head>
 
@@ -56,3 +57,13 @@
 </header>
 
 <main role="main">
+    <div id="progress"
+       style="
+        
+            width: 0;
+	        height: 6px;
+	        background-color: #005949;
+	        top: 0;
+	        position: fixed;
+	        z-index: 9999;">
+    </div>

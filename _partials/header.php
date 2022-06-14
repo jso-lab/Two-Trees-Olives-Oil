@@ -15,8 +15,10 @@
 
     <base href="http://localhost/">
 
-    <!-- Bootstrap core CSS -->
-    <link href="./assets/styles/app.css" rel="stylesheet"> 
+    <!--Les feuilles de styles CSS -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> 
+    <link href="./assets/styles/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/slides.css">
 
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>

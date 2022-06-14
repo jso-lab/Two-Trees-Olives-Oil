@@ -1,3 +1,43 @@
+<section id="bocal">
+    <div class="diapo">
+        <div class="elements">
+            <div class="element active">
+                <img src="/assets/img/cocktail_olives.jpg" alt="cocktail_olives">
+                <div class="caption">
+                    <h2>Un cocktail savoureux</h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Labore maiores perferendis ullam pariatur.</span></p>
+                </div>
+            </div>
+            <div class="element">
+                <img src="/assets/img/deco_olives.jpg" alt="deco_olives">
+                <div class="caption">
+                    <h2>Ambiance de douceur</h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Labore maiores perferendis ullam pariatur.</span></p>
+                </div>
+            </div>
+            <div class="element">
+                <img src="/assets/img/gros-plan_olives.jpg" alt="gros-plan_olives">
+                <div class="caption">
+                    <h2>Agréable au regard</h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Labore maiores perferendis ullam pariatur.</span></p>
+                </div>
+            </div>
+            <div class="element">
+                <img src="/assets/img/bocal_olive.jpg" alt="bocal_olives">
+                <div class="caption">
+                    <h2>Splendeur de délices</h2>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Labore maiores perferendis ullam pariatur.</span></p>
+                </div>
+            </div>
+        </div>
+        <i id="nav-gauche" class="las la-chevron-left"></i>
+        <i id="nav-droite" class="las la-chevron-right"></i>
+    </div>
+</section>
 <section class="jumbotron py-5 text-center">
     <div class="container py-5">
         <h1 class="jumbotron-heading">Porro quisquam.</h1>
