@@ -22,6 +22,7 @@
 
 .elements {
 	display: flex;
+	transition: 1s linear;
 }
 .element {
 	flex: 1 0 100%;
@@ -38,7 +39,14 @@
 	left: 10%;
 	color: rgb(255, 253, 253);
 	background-color: #005949;
+	transform: translate(-10%, -10%);
 	border-radius: 5px;
 	opacity: 70%;
 	padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.caption {
+		display: none;
+	}
 }

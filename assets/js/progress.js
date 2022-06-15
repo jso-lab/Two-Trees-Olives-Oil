@@ -41,6 +41,11 @@ window.onload = () => {
 	diapo.addEventListener('mouseover', stopTimer);
 	diapo.addEventListener('mouseout', startTimer);
 
+	//Mise en oeuvre du responsive
+	window.addEventListener('resize', () => {
+		slideWidth = diapo.getBoundingClientRect().width;
+	});
+
 	/**Cette fonction fait défiler vers la droite */
 	function slideNext() {
 		compteur++;
@@ -69,6 +74,6 @@ window.onload = () => {
 	}
 
 	function startTimer() {
-		timer = setInterval(slideNext, 3000);
+		timer = setInterval(slideNext, 4000);
 	}
 };
