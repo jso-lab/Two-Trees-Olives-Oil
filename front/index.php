@@ -38,7 +38,7 @@
         <i class="las la-chevron-right"  id="nav-droite"></i>
     </div>
 
-<section class="jumbotron py-5 text-center">
+<section class="jumbotron py-4 text-center">
     <div class="container py-5">
         <h1 class="jumbotron-heading">Une huile de prestige</h1>
         <p class="lead text-muted">
