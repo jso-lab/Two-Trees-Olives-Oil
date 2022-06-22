@@ -1,28 +1,34 @@
 <?php
-
+/*Définition des constantes d'index*/
 const HOME_ADMIN = 'Location: /index.php/admin';
 const HOME_USER = 'Location: /index.php';
 
 function index()
 {
+    /**
+     * Fonction d'affichage de tous les produits
+     */
     $products = get_products();
     require_once 'front/index.php';
 }
 
 function products($id)
 {
+    /* Fonction d'affichage de produits par catégories*/
     $products = get_products_by_category($id);
     require_once 'front/products.php';
 }
 
 function product($id)
 {
+    /* Fonction d'affichage de produits par id*/
     $product = get_products_by_id($id);
     require_once 'front/product.php';
 }
 
 function login()
 {
+    /*La focntion de login fait appel au fichier login.php*/
     require_once 'front/login.php';
 }
 
@@ -30,6 +36,7 @@ function register()
 {
     if (!empty($_POST)) {
         $data = $_POST;
+        /**Dans la base de données, la case admin est par défaut 0 */
         $data['admin'] = 0;
         set_user($data);
         header(HOME_USER);      
@@ -117,12 +124,17 @@ function admin_user_add() {
         require_once 'admin/user_add.php';
     }
 }
+/*
+Fonction de connexion au site.
+*/
 function try_login() {
+    //Cette fonction est contenue dans modele.php
     $user = find_user_by_email_and_password($_POST);
     if (!empty($user)) {
         $_SESSION["logged"] = true;
         $_SESSION["id"] = $user['id'];
         $_SESSION["email"] = $user['email'];
+        $_SESSION["password"] = $user['password'];
         if ($user['admin'] == 1) {
             header('Location: /index.php/admin');      
         } else {

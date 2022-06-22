@@ -1,7 +1,7 @@
 <div class="album py-5 bg-light">
     <div class="container">
 
-        <div class="row">
+        <div class="row py-5">
             <div class="col-lg-12">
                 <h1>Catégories</h1>
               
@@ -9,7 +9,7 @@
                     <caption>Liste des categories</caption>
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">N°</th>
                         <th scope="col">Désignation</th>
                         <th scope="col">Supprimer</th>
                     </tr>

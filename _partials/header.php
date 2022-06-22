@@ -31,11 +31,12 @@
             <div class="row">
                 <div class=" col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Menu</h4>
+                    <?php if (isset($_SESSION['logged'])) { echo "<p>" . $_SESSION['email'] . "</p>"; } ?>
                      <div class="list-unstyled">
-                       <?php if( session_start() && $_SESSION["logged"] = true) {  
-                          '<p class="nav-link"><a href="index.php/logout" style="text-decoration: none;" class="text-white">Déconnexion</a></p>';
-                         } ?>
-                        <p class="nav-link"><a href="index.php/login" style="text-decoration: none;" class="text-white">Admin</a></p>
+                       <?php if(session_start() && (!$_SESSION['logged'])) {  
+                          echo '<p class="nav-link"><a href="index.php/login" style="text-decoration: none;" class="text-white">Connexion</a></p>';
+                         }?> 
+                        
                     </div>
                 </div>
                  <div class="col-sm-4 offset-md-1 py-4">
@@ -46,7 +47,7 @@
                     <?php } ?>
                 </div>
         </div>
-            </div>
+            </div> 
         </div>
     </div>
     <div class="navbar navbar-dark bg-dark box-shadow">
@@ -56,11 +57,13 @@
                 <h1 class="pt-2">Two Trees Olive Oils</h1>
             </a>
             <div class="list-unstyled d-flex">
+                  <?php if(session_start() && (!$_SESSION["logged"])){
+                            echo '<p class="nav-link"><a href="index.php/register" style="text-decoration: none;" class="text-white">Créer un compte</a></p>';
+                         }?>
                 <p class="nav-link"><a style="text-decoration: none;" href="index.php/panier" class="text-white">Panier</a></p>
-                <p class="nav-link"><a style="text-decoration: none;" href="index.php/register" class="text-white">Créer un compte</a></p>
-                   <?php if( session_start() && $_SESSION["logged"] = false) {  
-                        '<p class="nav-link"><a href="index.php/login" style="text-decoration: none;" class="text-white">Connexion</a></p>';
-                    } ?>
+                 <?php if(session_start() && ($_SESSION["logged"])){
+                            echo '<p class="nav-link"><a href="index.php/logout" style="text-decoration: none;" class="text-white">Déconnexion</a></p>';
+                         }?>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

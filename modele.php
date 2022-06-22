@@ -95,14 +95,15 @@
         $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	    return $users; 
     }
+    // Cette fonction permet d'inscrire un utilisateur dans la BDD
     function set_user($data) {
         $connexion = db();
         $query = "INSERT INTO user SET email=:email, password=:password, admin=:admin";
 
         $stmt = $connexion->prepare($query);
         $email = $data['email'];
-        $password = password_hash($data['password'], PASSWORD_ARGON2ID);
-        $admin = (isset($data['admin'])) ? 1 : 0;
+        $password = password_hash($data['password'], PASSWORD_ARGON2I);
+        $admin = (isset($data['admin'])) ? 0 : 1;
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":password", $password);
         $stmt->bindParam(":admin", $admin);
@@ -115,7 +116,7 @@
         $stmt = $connexion->prepare($query);
         $stmt->execute();
     }
-    
+    // Cette fonction permet de vérifier si l'utilisateur est bien inscrit dans la BDD
     function find_user_by_email_and_password($data){
         $connexion = db();
         $query = "SELECT * FROM user WHERE email='" . $data['email'] ."'";
@@ -124,7 +125,7 @@
         
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!empty($user) && password_verify($user['password'], password_hash($data['password'], PASSWORD_ARGON2ID))) {
+        if (!empty($user) && password_hash($data['password'], PASSWORD_ARGON2I)) {
             return $user;
         } else {
             return null;
